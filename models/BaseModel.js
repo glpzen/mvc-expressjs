@@ -1,22 +1,21 @@
-"use strict";
-class BaseModel{
-    constructor(){
+class BaseModel {
+    constructor() {
         console.log('base model constructor has run');
         this.connectDb();
     }
 
-    connectDb(){
+    connectDb() {
         var mysql = require('mysql');
         this._connection = mysql;
         this._connection = mysql.createConnection({
-            host     : 'localhost',
-            user     : 'root',
-            password : 'root',
-            database : 'my_db'
+            host: 'localhost',
+            user: 'root',
+            password: 'root',
+            database: 'my_db'
         });
     }
 
-    get connection(){
+    get connection() {
         return this._connection;
     }
 }
