@@ -1,6 +1,5 @@
 class BaseModel {
     constructor() {
-        console.log('base model constructor has run');
         this.connectDb();
     }
 

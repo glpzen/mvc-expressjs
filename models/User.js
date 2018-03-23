@@ -16,10 +16,6 @@ class User extends BaseModel {
         });
     }
 
-    setUsers() {
-        console.log('set users');
-    }
-
 }
 
 module.exports = User;
